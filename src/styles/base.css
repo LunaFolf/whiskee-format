@@ -1,0 +1,73 @@
+html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: #1e1e1f;
+  color: #fafafa;
+  overflow-x: hidden;
+  padding-top: 25px;
+}
+
+.textBody {
+  position: absolute;
+  width: 75vw;
+  left: 12.5vw;
+  text-align: justify;
+  transition: width .25s;
+  padding-bottom: 50px;
+}
+
+a {
+  color: #f16806;
+}
+
+a:visited {
+  color: #B89F8D;
+}
+
+.card {
+  width: calc(100% - 32px);
+  color: #fafafa;
+  background-color: transparent;
+  border: 2px solid #fafafa22;
+  padding: 16px;
+  filter: drop-shadow(4px 4px 2px black);
+  border-radius: 8px;
+  overflow-wrap: break-word;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+}
+
+hr,
+em {
+  opacity: 0.75;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 400px) {
+  .textBody {
+    width: 90vw;
+    left: 5vw;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .textBody {
+    width: 750px;
+    left: calc(50vw - 375px);
+  }
+}
